@@ -1,0 +1,28 @@
+/* Add a container for the board */
+.board {
+  /* border: 1px solid black; */
+  margin: 10px;
+  display: flex;
+  flex-direction: column; /* Arrange rows vertically */
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  border: 1px solid black;
+  cursor: pointer;
+  height: 10vh;
+  width: 10vh; /* Use the same unit for height and width to maintain a square shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;/* Add some margin between squares for spacing */
+}
+
+/* Optionally, add some hover effect to the squares */
+.square:hover {
+  background-color: lightblue;
+}
